@@ -1,7 +1,178 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="information about our organization">
+        <meta name="author" content="Mico">
+        <link rel="stylesheet" href="style.css">
+        <title>About Us</title>
+
+        <style>
+
+            html {
+              box-sizing: border-box;
+            }
+            
+            *, *:before, *:after {
+              box-sizing: inherit;
+            }
+            
+            .column {
+              float: left;
+              width: 25%;
+              margin-bottom: 16px;
+              padding: 0 8px;
+            }
+            
+            @media screen and (max-width: 650px) {
+              .column {
+                width: 100%;
+                display: block;
+              }
+            }
+            
+            .card {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+            
+            .container {
+              padding: 0 16px;
+            }
+            
+            .container::after, .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            
+            .title {
+              color: grey;
+            }
+            
+            .button:hover {
+              background-color: #555;
+            }
+
+        </style>
     </head>
     <body>
+        <!-- Nav bar -->
+        <div class="missionStatement">
+            <br />
+            <h1 style="text-align: center;">OUR MISSION</h1>
+            <p style="text-align: center;">We wish that no animal endure the pain 
+                 and suffering of a life of abandonment and neglect. <br />
+                  the Peters pets works to support and preserve the precious life on this planet
+                   and <br />strive to create a humane living environment for cats and dogs.</p>
+            <br />
+        </div>
+
+        
+        <div class="founder">
+            <h2 style="text-align: center;">Founder Story</h2>
+            <p style="text-align: center;">Founder's story</p>
+        </div>
+
+        
+        <div class="teamInfo">
+            <div class="team">
+                <h2 style="text-align: center;">Our Team</h2>
+            </div>
+            <div class="wrap">
+                <div class="row">
+                    <div class="column">
+                    <div class="card">
+                        <img src="../_Logo.png" alt="Jane" style="width:100%">
+                        <div class="container">
+                            <h2>Adam Peters</h2>
+                            <p class="title">CEO</p>
+                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                            <p>adam@peters.com</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="column">
+                    <div class="card">
+                        <img src="../_Logo.png" alt="Mike" style="width:100%">
+                        <div class="container">
+                            <h2>Ellen Zhao</h2>
+                            <p class="title">CFO</p>
+                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                            <p>ellen@peters.com</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="column">
+                    <div class="card">
+                        <img src="../_Logo.png" alt="John" style="width:100%">
+                        <div class="container">
+                            <h2>Nina Houston</h2>
+                            <p class="title">CMO</p>
+                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                            <p>nina@peters.com</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                        <img src="../_Logo.png" alt="John" style="width:100%">
+                        <div class="container">
+                            <h2>Mico</h2>
+                            <p class="title">CTO</p>
+                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                            <p>mico@peters.com</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="column">
+                  <div class="card">
+                      <img src="../_Logo.png" alt="Jane" style="width:100%">
+                      <div class="container">
+                          <h2>James Watt</h2>
+                          <p class="title">Senior Volunteer</p>
+                          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                          <p>james@peters.com</p>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="column">
+                  <div class="card">
+                      <img src="../_Logo.png" alt="Mike" style="width:100%">
+                      <div class="container">
+                          <h2>Grace Dimmy</h2>
+                          <p class="title">Operations Manager</p>
+                          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                          <p>grace@peters.com</p>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="column">
+                  <div class="card">
+                      <img src="../_Logo.png" alt="John" style="width:100%">
+                      <div class="container">
+                          <h2>Dr. Tatum Fires</h2>
+                          <p class="title">Lead Vet</p>
+                          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                          <p>tatum@peters.com</p>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="column">
+                      <div class="card">
+                      <img src="../_Logo.png" alt="John" style="width:100%">
+                      <div class="container">
+                          <h2>Jaylen K</h2>
+                          <p class="title">Lead Animal Trainer</p>
+                          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                          <p>jaylen@peters.com</p>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <!-- Footer -->
     </body>
 </html>
