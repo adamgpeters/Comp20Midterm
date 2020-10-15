@@ -1,7 +1,162 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="animals available for adoption">
+        <meta name="author" content="Mico">
+        <link rel="stylesheet" href="style.css">
+        <title>Adoptable Dogs and Cats</title>
+
+        <style>
+
+            html {
+              box-sizing: border-box;
+            }
+            
+            *, *:before, *:after {
+              box-sizing: inherit;
+            }
+            
+            .column {
+              float: left;
+              width: 25%;
+              margin-bottom: 16px;
+              padding: 0 8px;
+            }
+            
+            @media screen and (max-width: 650px) {
+              .column {
+                width: 100%;
+                display: block;
+              }
+            }
+            
+            .card {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+            
+            .container {
+              padding: 0 16px;
+            }
+            
+            .container::after, .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            
+            .title {
+              color: grey;
+            }
+            
+            .button:hover {
+              background-color: #555;
+            }
+
+
+        </style>
     </head>
     <body>
+        <!-- Nav bar -->
+        <div class="teamInfo">
+            <div class="team">
+                <h2 style="text-align: center;">Dogs and Cats available for adoption</h2>
+            </div>
+            <div class="wrap">
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/cute_cat.jpg" alt="Jane" style="width:100%">
+                            <div class="container">
+                                <h2>Cute</h2>
+                                <p class="title">breed</p>
+                                <p>female</p>
+                                <p>town</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/dog_marsh.jpg" alt="Mike" style="width:100%">
+                            <div class="container">
+                                <h2>Marsh</h2>
+                                <p class="title">breed</p>
+                                <p>female</p>
+                                <p>town</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/cute_cat.jpg" alt="Jane" style="width:100%">
+                            <div class="container">
+                                <h2>Cute</h2>
+                                <p class="title">breed</p>
+                                <p>female</p>
+                                <p>town</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/dog_marsh.jpg" alt="Mike" style="width:100%">
+                            <div class="container">
+                                <h2>Marsh</h2>
+                                <p class="title">breed</p>
+                                <p>female</p>
+                                <p>town</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/mance.jpg" alt="John" style="width:100%">
+                            <div class="container">
+                                <h2>Mance</h2>
+                                <p class="title">breed</p>
+                                <p>male</p>
+                                <p>town</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/reilly1.jpg" alt="John" style="width:100%">
+                            <div class="container">
+                                <h2>Reilly</h2>
+                                <p class="title">breed</p>
+                                <p>male</p>
+                                <p>town</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/mance.jpg" alt="John" style="width:100%">
+                            <div class="container">
+                                <h2>Mance</h2>
+                                <p class="title">breed</p>
+                                <p>male</p>
+                                <p>town</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/reilly1.jpg" alt="John" style="width:100%">
+                            <div class="container">
+                                <h2>Reilly</h2>
+                                <p class="title">breed</p>
+                                <p>male</p>
+                                <p>town</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
     </body>
 </html>
