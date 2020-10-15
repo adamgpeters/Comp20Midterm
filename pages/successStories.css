@@ -1,0 +1,48 @@
+body {
+    background-color: #566246;
+}
+
+.success-title-div {
+    text-align: center;
+    color: #a4c2a5;
+    padding-top: 5vh;
+}
+
+#success-title {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 50px;
+    line-height: 45px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px #131312;
+    font-stretch: ultra-expanded;
+}
+
+.success1, .success2 {
+    align-items: center;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    color: #a4c2a5;
+}
+
+#seb-text, #butts-text {
+    flex: 1.5;
+}
+
+#seb-title, #butts-title {
+    font-size: 25px;
+}
+
+#seb-para, #butts-para {
+    font-size: 20px;
+}
+
+#seb-pic, #butts-pic {
+    flex: 1;
+}
+
+#seb-img, #butts-img {
+    width: 50%;
+}
