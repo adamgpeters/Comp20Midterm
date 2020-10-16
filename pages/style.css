@@ -17,8 +17,13 @@
   }
 
 body {
-    background-color: #e6ebff;
+    
+    background-color:  #566246;
   }
+
+.card {
+  background-color: #e6ebff;
+}
 
 .missionStatement {
   background-image: url("../assets/cat_dog.jpg");
