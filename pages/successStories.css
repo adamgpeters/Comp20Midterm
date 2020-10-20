@@ -18,7 +18,7 @@ body {
     font-stretch: ultra-expanded;
 }
 
-.success1, .success2 {
+.success1, .success2, .success3, .success4 {
     align-items: center;
     padding-top: 5vh;
     padding-left: 5vw;
@@ -27,22 +27,23 @@ body {
     color: #a4c2a5;
 }
 
-#seb-text, #butts-text {
+#seb-text, #cheeto-text, #butts-text, #bud-text {
     flex: 1.5;
 }
 
-#seb-title, #butts-title {
+#seb-title, #cheeto-title, #butts-title, #bud-title {
     font-size: 25px;
 }
 
-#seb-para, #butts-para {
+#seb-para, #cheeto-para, #butts-para, #bud-para {
     font-size: 20px;
 }
 
-#seb-pic, #butts-pic {
+#seb-pic, #cheeto-pic, #butts-pic, #bud-pic {
     flex: 1;
 }
 
-#seb-img, #butts-img {
+#seb-img, #cheeto-img, #butts-img, #bud-img {
     width: 50%;
+    border: 5px solid #a4c2a5;
 }
