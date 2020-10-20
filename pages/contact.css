@@ -3,7 +3,12 @@ body {
 }
 
 .contact-whole {
-    text-align: center;    
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color:#3c4432;
+    text-align: center;  
 }
 
 .contact-title-div {
@@ -11,6 +16,10 @@ body {
     color: #a4c2a5;
     padding-top: 5vh;
     margin-bottom: 0px;
+}
+
+.form-div{
+    padding-bottom: 5px;
 }
 
 #contact-title {
@@ -24,7 +33,7 @@ body {
 }
 
 input[type=text], select, textarea {
-    width: 30%; /* Full width */
+    width: 50%; /* Full width */
     border:none;
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
