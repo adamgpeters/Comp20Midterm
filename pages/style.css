@@ -1,8 +1,6 @@
-/* body{
-  height:100vh;
-  width:100vh;
-
-} */
+body{
+  font-family: sans-serif;
+}
 
 html, body {
   padding: 0;
@@ -11,11 +9,7 @@ html, body {
 
 
 .navbar {
-      /* background-color: #333; */
-      /* overflow: auto  ;
-      position: absolute; */
       width: 100%; 
-      /* top: 0; */
       
       min-height: 120px;
       position: fixed;
@@ -54,9 +48,9 @@ html, body {
 #logo-wrapper {
   position: fixed;
   left:0%;
-  /* top:1%; */
+  top:0;
   width: 14%;
-  height: 110px;
+  height: 120px;
   padding: 0 0;
   margin: 0 0;
   transition: .6s;
@@ -72,14 +66,11 @@ html, body {
 
 .parallax {
   /* The image used */
-  position: relative;
-  /* overflow: auto; */
-  /* display: blocked; */
-  background-image: url("../assets/dog_marsh.jpg");
-  /* height: 100vh; */
-  width: 100%;
+  background-image: url("../assets/cute_cat.jpg");
+
   /* Set a specific height */
-  /* min-height: 500px;  */
+  height: 80vh;
+  width: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -97,31 +88,127 @@ html, body {
   width: 100%;
 }
 
-#cover {
-  /* position: fixed; */
-  display: block;
-  width: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  object-position: 50% 0%;
-  max-height: 75vh;
-}
-
-#test p {
-  /* margin-top: 25px; */
-  /* top: 50%; */
-  bottom: 50%;
-  font-size: 21px;
+#cover-text {
+  bottom: 50%;  
+  width: 100%;  
   text-align: center;
+  font-size: 60px;
+  font-weight: bold;
   display: block;
   position: absolute;
-  animation: fadein 2s;
-  font-size: 40px;
   color: #f2f2f2;
+
+}
+
+#cover-text p {
+  animation: fadein 2s;
   -moz-animation: fadein 2s; /* Firefox */
   -webkit-animation: fadein 2s; /* Safari and Chrome */
   -o-animation: fadein 2s; /* Opera */
 }
+
+#cover-text a {
+  animation: fadein 4s;
+  -moz-animation: fadein 4s; /* Firefox */
+  -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -o-animation: fadein 4s; /* Opera */
+}
+
+#cover-text p {
+  /* position: absolute; */
+  /* margin-bottom: 100px; */
+}
+
+#help-today {
+  position: absolute;
+  display: inline-block;
+  border-style: solid;
+  margin-top: 5%;
+  padding: 10px 5px;
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 30px;
+  text-decoration: none;
+  color: rgba(242, 242, 242, 1);
+  background-color: rgba(242, 242, 242, 0);
+  transition: .3s;
+}
+
+#help-today:hover {
+  background-color: rgba(242, 242, 242, .3);
+}
+
+#ourmission {
+  position: relative;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+}
+
+#ourmission-underline a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+#ourmission-underline a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  background-color: #a4c2a5;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out 0s;
+}
+
+#ourmission-underline > a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+#ourmission #ourmission-text {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ourmission #ourmission-text p {
+  /* flex: 0 0 120px; */
+}
+
+.column {
+  /* float: left; */
+  /* position: relative; */
+  left: 10px;
+  /* right: 5px */
+  /* display: block; */
+  width: 33.33%;
+  height: 20%;
+  padding: 5px;
+  /* margin: 5px; */
+}
+
+.fit-image {
+  object-fit: contain; 
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;  
+  display: table;
+}
+
+.row {
+  width: 100%;
+}
+
+
 
 @keyframes fadein {
   from {
@@ -147,6 +234,7 @@ html, body {
       opacity:1;
   }
 }
+
 @-o-keyframes fadein { /* Opera */
   from {
       opacity:0;
