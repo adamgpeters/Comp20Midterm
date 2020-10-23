@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="animals available for adoption">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Mico">
         <link rel="stylesheet" href="style.css">
         <title>Adoptable Dogs and Cats</title>
@@ -31,12 +32,13 @@
               }
             }
             
-            .card {
+            /* .card {
               box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            }
+            } */
             
             .container {
               padding: 0 16px;
+              /* background-color: #e6ebff; */
             }
             
             .container::after, .row::after {
@@ -45,21 +47,28 @@
               display: table;
             }
             
-            .title {
+            /* .title {
               color: grey;
-            }
+            } */
             
             .button:hover {
               background-color: #555;
             }
 
+            .topTitle {
+                text-align: center;
+                color: #a4c2a5;
+                padding-top: 5vh;
+                font-size: x-large;
+                
+            }
 
         </style>
     </head>
     <body>
         <!-- Nav bar -->
-        <div class="teamInfo">
-            <div class="team">
+        <div class="info">
+            <div class="topTitle">
                 <h2 style="text-align: center;">Dogs and Cats available for adoption</h2>
             </div>
             <div class="wrap">
