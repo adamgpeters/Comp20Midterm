@@ -29,11 +29,12 @@ body {
 
 
 .missionStatement {
-  background-image: url("../assets/cat_dog.jpg");
+  /* background-image: url("../assets/cat_dog.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 50%;
   font-family: 'Courier New', Courier, monospace;
+  color: #a4c2a5;
 }
 
 .missionStatement p {
@@ -41,6 +42,7 @@ body {
   margin-top: 8rem;
   margin-bottom: 5rem;
   font-weight: bold;
+  color: #a4c2a5;
 }
 
 body {
@@ -48,9 +50,10 @@ body {
   font-family: Impact, Charcoal, sans-serif;
 }
 
-.team p {
+.team {
   font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
+  font-size: x-large;
+  color: #a4c2a5;
 }
 
 .success-title-div {
