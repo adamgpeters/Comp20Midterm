@@ -1,7 +1,263 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="information about our organization">
+        <meta name="author" content="Mico">
+        <link rel="stylesheet" href="style.css">
+        <title>About Us</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script>
+            window.onscroll = function () { scrollFunction() };
+        
+            // window.onload = function() {
+            //   var navHeight = $('#navbar').height();
+            //   document.getElementById("logo-wrapper").style.height = navHeight + "px";
+            // }; 
+        
+            function scrollFunction() {
+              if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.minHeight = "60px";
+                document.getElementById("logo-wrapper").style.height = "60px";
+              } else {
+                document.getElementById("navbar").style.minHeight = "120px";
+                document.getElementById("logo-wrapper").style.height = "120px";
+              }
+            }
+        </script>
+
+        <style>
+
+            html {
+              box-sizing: border-box;
+            }
+            
+            *, *:before, *:after {
+              box-sizing: inherit;
+            }
+            
+            .column {
+              float: left;
+              width: 25%;
+              margin-bottom: 16px;
+              padding: 0 8px;
+            }
+            
+            @media screen and (max-width: 650px) {
+              .column {
+                width: 100%;
+                display: block;
+              }
+            }
+            
+            .card {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+            
+            .container {
+              padding: 0 16px;
+            }
+            
+            .container::after, .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            
+            .title {
+              color: grey;
+            }
+            
+            .button:hover {
+              background-color: #555;
+            }
+
+            .missionStatement {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+
+            .missionStatement p {
+              font-size: x-large;
+              margin-top: 8rem;
+              margin-bottom: 5rem;
+            }
+
+            .teamInfo {
+              
+              background-color: rgb(248, 248, 248);
+            }
+
+            h1 {
+              text-align: center;
+              color: #a4c2a5;
+              padding-top: 5vh;
+            }
+
+            
+
+            h2 {
+              text-align: center;
+              color: #a4c2a5;
+              padding-top: 5vh;
+              padding-bottom: 5vh;
+            }
+
+        </style>
     </head>
     <body>
+		<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="aboutUs.html">About Us<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="successStories.html">Success Stories</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="adoptableAnimals.html">Available Animals</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="volunteer.html">Volunteer</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="donate.html">Donate</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<a href="index.html" id="logo-wrapper">
+			<img id="logo" src="../assets/logo_transparent2.png">
+		</a>
+
+        <!-- Nav bar -->
+        <div class="missionStatement">
+            <br />
+            <h1 style="text-align: center;">OUR MISSION</h1>
+            <p style="text-align: center;">We wish that no animal endure the pain 
+                 and suffering of a life of abandonment and neglect.
+                  the Peters pets works to support and preserve the precious life on this planet
+                   and strive to create a humane living environment for cats and dogs.</p>
+            <br />
+        </div>   
+        <div class="teamInfo">
+          <br />
+            <div class="team">
+                <h2 style="text-align: center;">Our Team</h2>
+            </div>
+            <div class="wrap">
+                <div class="row">
+                    <div class="column">
+                    <div class="card">
+                        <img src="../assets/_Logo.png" alt="Jane" style="width:100%">
+                        <div class="container">
+                            <h3>Adam Peters</h3>
+                            <p class="title">CEO</p>
+                            <p>Been our CEO since 2010</p>
+                            <p>adam@peters.com</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="column">
+                    <div class="card">
+                        <img src="../assets/_Logo.png" alt="Mike" style="width:100%">
+                        <div class="container">
+                            <h3>Ellen Zhao</h3>
+                            <p class="title">CFO</p>
+                            <p>Been our CFO since 2015</p>
+                            <p>ellen@peters.com</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="column">
+                    <div class="card">
+                        <img src="../assets/_Logo.png" alt="John" style="width:100%">
+                        <div class="container">
+                            <h3>Nina Houston</h3>
+                            <p class="title">CMO</p>
+                            <p>Been our CMO since 2014</p>
+                            <p>nina@peters.com</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/Mico.jpg" alt="Mico" style="width:100%">
+                            <div class="container">
+                                <h3>Mico</h3>
+                                <p class="title">CTO</p>
+                                <p>Been our CTO since 2010</p>
+                                <p>mico@peters.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="column">
+                  <div class="card">
+                        <img src="../assets/_Logo.png" alt="Jane" style="width:100%">
+                        <div class="container">
+                          <h3>James Watt</h3>
+                          <p class="title">Senior Volunteer</p>
+                          <p>Been our Senior Volunteer since 2010</p>
+                          <p>james@peters.com</p>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="column">
+                  <div class="card">
+                        <img src="../assets/_Logo.png" alt="Mike" style="width:100%">
+                        <div class="container">
+                          <h3>Grace Dimmy</h3>
+                          <p class="title">Operations Manager</p>
+                          <p>Been our Operation Manager since 2011</p>
+                          <p>grace@peters.com</p>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="column">
+                  <div class="card">
+                       <img src="../assets/Fabrice.jpg" alt="John" style="width:100%">
+                       <div class="container">
+                          <h3>Dr. Tatum Fires</h3>
+                          <p class="title">Lead Vet</p>
+                          <p>Been our Lead Vet since 2012</p>
+                          <p>tatum@peters.com</p>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="column">
+                      <div class="card">
+                        <img src="../assets/_Logo.png" alt="John" style="width:100%">
+                        <div class="container">
+                            <h3>Jaylen K</h3>
+                            <p class="title">Lead Animal Trainer</p>
+                            <p>Been our Lead trainer since 2010</p>
+                            <p>jaylen@peters.com</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <!-- put at bottom of body -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous">
+        </script>
     </body>
 </html>

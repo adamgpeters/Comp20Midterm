@@ -1,7 +1,228 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="animals available for adoption">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Mico">
+        <link rel="stylesheet" href="style.css">
+        <title>Adoptable Dogs and Cats</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script>
+            window.onscroll = function () { scrollFunction() };
+        
+            // window.onload = function() {
+            //   var navHeight = $('#navbar').height();
+            //   document.getElementById("logo-wrapper").style.height = navHeight + "px";
+            // }; 
+        
+            function scrollFunction() {
+              if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.minHeight = "60px";
+                document.getElementById("logo-wrapper").style.height = "60px";
+              } else {
+                document.getElementById("navbar").style.minHeight = "120px";
+                document.getElementById("logo-wrapper").style.height = "120px";
+              }
+            }
+        </script>
+
+        <style>
+
+            html {
+              box-sizing: border-box;
+            }
+            
+            *, *:before, *:after {
+              box-sizing: inherit;
+            }
+            
+            .column {
+              float: left;
+              width: 25%;
+              margin-bottom: 16px;
+              padding: 0 8px;
+            }
+            
+            @media screen and (max-width: 650px) {
+              .column {
+                width: 100%;
+                display: block;
+              }
+            }
+            
+            .card {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+            
+            .container {
+              padding: 0 16px;
+              /* background-color: #e6ebff; */
+            }
+            
+            .container::after, .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            
+            .button:hover {
+              background-color: #555;
+            }
+
+            .topTitle {
+                text-align: center;
+                color: #a4c2a5;
+                padding-top: 5vh;
+                font-size: x-large;
+                padding-bottom: 5vh;
+                
+            }
+        </style>
     </head>
     <body>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="aboutUs.html">About Us<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="successStories.html">Success Stories</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="adoptableAnimals.html">Available Animals</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="volunteer.html">Volunteer</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="donate.html">Donate</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<a href="index.html" id="logo-wrapper">
+			<img id="logo" src="../assets/logo_transparent2.png">
+		</a>
+        <!-- Nav bar -->
+        <div class="info">
+            <div class="topTitle">
+                <h2 style="text-align: center;">Dogs and Cats available for adoption</h2>
+            </div>
+            <div class="wrap">
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <img class="img1" src="../assets/jeverly.jpg" alt="Cute" style="width:100%">
+                            <div class="container">
+                                <h2>Cute</h2>
+                                <p class="title">Turkish Van</p>
+                                <p>female</p>
+                                <p>Medford</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/Julian.jpeg" alt="Mike" style="width:100%">
+                            <div class="container">
+                                <h2>Marsh</h2>
+                                <p class="title">breed</p>
+                                <p>female</p>
+                                <p>Cambridge</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/alex-andrews.jpg" alt="Jane" style="width:100%">
+                            <div class="container">
+                                <h2>Jessy</h2>
+                                <p class="title">Turkish Angora</p>
+                                <p>female</p>
+                                <p>Somerville</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/luan-oosthuizen.jpg" alt="Mike" style="width:100%">
+                            <div class="container">
+                                <h2>Eric</h2>
+                                <p class="title">Japanese Bobtail</p>
+                                <p>male</p>
+                                <p>Medford</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/mindaugas.jpg" alt="John" style="width:100%">
+                            <div class="container">
+                                <h2>Violet</h2>
+                                <p class="title">Boxer</p>
+                                <p>female</p>
+                                <p>Meford</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/sebastian-coman.jpg" alt="John" style="width:100%">
+                            <div class="container">
+                                <h2>Josh</h2>
+                                <p class="title">breed</p>
+                                <p>male</p>
+                                <p>Netwon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/laura-stanley.jpg" alt="John" style="width:100%">
+                            <div class="container">
+                                <h2>Mance</h2>
+                                <p class="title">breed</p>
+                                <p>male</p>
+                                <p>Somerville</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="../assets/dominika-roseclay.jpg" alt="John" style="width:100%">
+                            <div class="container">
+                                <h2>Reilly</h2>
+                                <p class="title">breed</p>
+                                <p>male</p>
+                                <p>Medford</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <!-- put at bottom of body -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous">
+        </script>
     </body>
 </html>
