@@ -3,12 +3,13 @@
 
 <head>
   <!-- Bootstrap -->
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <script>
+<script>
     window.onscroll = function () { scrollFunction() };
 
     // window.onload = function() {
@@ -66,9 +67,9 @@
       <p>
         You can help an animal in need
       </p>
-        <a id="help-today" href="aboutUs.html"> 
-          Help Today
-        </a>
+      <a id="help-today-button" href="#help-today">
+        Help Today
+      </a>
     </div>
   </div>
 
@@ -78,41 +79,175 @@
     </div>
     <div id="ourmission-text">
       <p>
-        We are Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptas adipisci aperiam aliquam ullam quaerat fugit distinctio consequatur dolores rem veritatis corrupti molestiae deserunt, optio eaque? Non nemo ipsum odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed earum illo doloribus dolores labore sunt tempora ducimus ab nesciunt autem quam minus inventore explicabo, beatae assumenda. Voluptates esse nesciunt deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, laborum repudiandae dolore sapiente magni pariatur sit tempora suscipit quibusdam dignissimos perferendis vero vitae illo culpa quis, officia quam unde dolorum?
+        To help lost and abandoned pets find a loving home
       </p>
     </div>
   </div>
-  <div id="Meet Our animals ">
-    <p>
-      Meet Our Animals
+
+  <div id="pawprints" style="position:relative;display: block;width: 100%;height:40vh;"></div>
+
+  <div style="display: block;width: 100%;height:30vh;"></div>
+
+  <div class="hideme" id="statistics-container">
+    <p id="stat-header">
+      In 2019, you...
+    </p>
+    <div id="statistics" class="hideme">
+      <p id="stat1">
+        found a home for 100 of our pets
+      </p>
+      <p id="stat2">
+        saved 200 animals from living off the streets
+      </p>
+      <p id="stat3">
+        reduced the number of stray animals in medford by half
+      </p>
+      <p id="stat4">
+        helped us feed hundreds of forgotten animals with your donations
+      </p>
+    </div>
+  </div>
+
+  <div class="hideme" id="need-family">
+    <p id="underline" class="hideme">
+      But we still have countless pets in need of a family.
     </p>
   </div>
 
-  <div class="row">
-    <div class="column">
-      <img class="fit-img" src="../assets/scout.jpg" alt="Snow" style="width:100%">
-    </div>
-    <div class="column">
-      <img class="fit-img" src="../assets/dog_marsh.jpg" alt="Forest" style="width:100%">
-    </div>
-    <div class="column">
-      <img class="fit-img" src="../assets/mance.jpg" alt="Mountains" style="width:100%">
-    </div>
+  <!-- <table style="width:100%;table-layout: fixed;border-collapse: collapse;">
+    <tr id="row1" style="text-align:center;">
+      <td class="col1">
+        Benny
+      </td>
+      <td class="col2" style="width:33.33%;">
+        Pluto
+      </td>
+      <td class="col3" style="width:33.33%;">
+        Merlin
+      </td>
+    </tr>
+    <tr id="row2">
+      <td class="col1" style="width:33.33%;">
+        asdfasdf
+      </td>
+      <td class="col2" style="width:33.33%;">
+      </td>
+      <td class="col3" style="width:33.33%;">
+      </td>
+    </tr>
+    <tr id="row3">
+      <td class="col1" style="width:33.33%;">
+      </td>
+      <td class="col2" style="width:33.33%;">
+      </td>
+      <td class="col3" style="width:33.33%;">
+      </td>
+    </tr>
+
+
+    <tr id="row4">
+      <td class="col1" style="width:33.33%;">
+      </td>
+      <td class="col2" style="width:33.33%;">
+      </td>
+      <td class="col3" style="width:33.33%;">
+      </td>
+    </tr>
+
+  </table> -->
+
+
+  <div id="help-today">
+    <a >
+      Help Today
+    </a>
   </div>
-  
+
+  <div class="row">
+    <div class="column hideme" id="row1"><a href="#">
+      <div>
+        <p>
+          Adopt
+        </p>
+      </div>
+    </a></div>
+    <div class="column hideme" id="row2"><a href="#">
+      <div>
+        <p>
+          Donate
+        </p>
+      </div>
+    </a></div>
+    <div class="column hideme" id="row3"><a href="#">
+        <div>
+          <p>
+            Volunteer
+          </p>
+        </div>
+    </a></div>
+  </div>
+
 
   <!-- <p>this is out website</p> -->
+  <!-- AOS -->
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
   <!-- Bootstrap: goes at bottom of body -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
+  <script>
+
+    function hideIfBelow() {
+      $('.hideme').each(function (i) {
+
+        var top_of_elem = $(this).position().top;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        /* If the object is completely visible in the window, fade it it */
+        if (bottom_of_window > top_of_elem + 40) {
+          $(this).animate({ 'opacity': '1' }, 750);
+        }
+      });
+    }
+
+
+    $(document).ready(function () {
+      hideIfBelow();
+      /* Every time the window is scrolled ... */
+      $(window).scroll(function () {
+        hideIfBelow();
+      });
+
+    });
+  </script>
+
+  <script>
+
+    $(document).ready(function () {
+      // hideIfBelow();
+      /* Every time the window is scrolled ... */
+      $(window).scroll(function () {
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        if (bottom_of_window > $('#underline').position().top) {
+          $('#underline').css({'visibility': 'visible', 'width':"100%"})
+        }
+      });
+
+    });
+  </script>
+
+
+
+  <script src="pawprints.js"></script>
+  <script src="youhelped.js"></script>
 </body>
 
 </html>
