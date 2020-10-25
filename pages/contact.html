@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="home.css">
-        <link rel="stylesheet" type="text/css" href="donate.css">
+        <link rel="stylesheet" type="text/css" href="contact.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script>
@@ -28,7 +28,7 @@
       </script>
         <script>
             function gotMessage() {
-                alert('Thank you for your donation!');
+                alert('We got your message! We will get back to you as soon as we can!');
             }
         </script>
         <style>
@@ -127,54 +127,21 @@
             crossorigin="anonymous"></script>
         </header>
         <contact-main>
-            <section class="donate-whole">
-                <div class="donate-title-div">
-                    <h1 id="donate-title">DONATE</h1>  
-                </div>
-                <div class="donate-para-div">
-                    <p id="donate-para"> 
-                        We need your help. In the US, there are over 70 million  <br>
-                        stray animals and only six to eight million find there <br>
-                        way into shelters. Your donation will help us be able to <br>
-                        bring more animals off the streets and into loving homes. <br>
-                        All donation types are welcome. If your donating money, fill <br>
-                        out the form below, but pet food and supplies are also welcome <br>
-                        donations. Also if you can't donate and would like to support us, <br>
-                        consider volunteering or telling your friends and family about <br>
-                        our organization. Thank You!
-                    </p>
-                </div>
-                <div class="form-title">
-                    <h2 id="form-text">Donation Form</h2>
+            <section class="contact-whole">
+                <div class="contact-title-div">
+                    <h1 id="contact-title">CONTACT US!</h1>  
+                    <h3> adoption inquiry? spay/neuter assistance? or just general questions? </h3>
                 </div>
                 <div class="form-div">
                     <form action="#" onsubmit=" gotMessage();">
-                        <label for="first-name"></label> <br>
-                        <input type="text" id="fname" name="name" placeholder="first name"> <br>
-                        <label for="last-name"></label> <br>
-                        <input type="text" id="lname" name="name" placeholder="last name"> <br>
+                        <label for="name"></label> <br>
+                        <input type="text" id="fname" name="name" placeholder="first name, last name"> <br>
                         <label for="email"></label> <br>
                         <input type="text" id="email" name="email" placeholder="email"> <br>
-                        <label for="phone number"></label> <br>
-                        <input type="text" id="num" name="num" placeholder="phone number"> <br> 
-                        <label for="donation"></label> <br>
-                        <input type="text" id="donation" name="donation" placeholder="donation amount"> <br> 
-                        <label for="card number"></label> <br>
-                        <input type="text" id="card number" name="card" placeholder="card number"> <br>
-                        <label for="expiration date"></label> <br>
-                        <input type="text" id="date" name="date" placeholder="MM/YY"> <br>
-                        <label for="cvc"></label> <br>
-                        <input type="text" id="cvc" name="cvc" placeholder="cvc"> <br>
-                        <label for="address"></label> <br>
-                        <input type="text" id="address" name="address" placeholder="address"> <br>
-                        <label for="city"></label> <br>
-                        <input type="text" id="city" name="city" placeholder="city"> <br>
-                        <label for="state"></label> <br>
-                        <input type="text" id="state" name="state" placeholder="state"> <br>
-                        <label for="zipcode"></label> <br>
-                        <input type="text" id="zipcode" name="zipcode" placeholder="zipcode"> <br> <br> <br>
-                        
-                        <input type="submit" value="Donate">
+                        <label for="subject"></label> <br>
+                        <textarea id="subject" name="subject" placeholder="message..." style="height:200px"></textarea> <br>
+                        <br>
+                        <input type="submit" value="Submit">
                     </form>
                 </div>
             </section>
@@ -184,4 +151,3 @@
         </footer>
     </body>
 </html>
-   
