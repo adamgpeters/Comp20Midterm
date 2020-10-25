@@ -1,7 +1,208 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-    </body>
+<head>
+	 <title> Peters Pets </title>
+
+	 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	
+	
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        // window.onload = function() {
+        //   var navHeight = $('#navbar').height();
+        //   document.getElementById("logo-wrapper").style.height = navHeight + "px";
+        // }; 
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.minHeight = "60px";
+                document.getElementById("logo-wrapper").style.height = "60px";
+            } else {
+                document.getElementById("navbar").style.minHeight = "120px";
+                document.getElementById("logo-wrapper").style.height = "120px";
+            }
+        }
+
+    </script>
+
+
+    <style>
+        .navbar {
+            width: 100%;
+
+            min-height: 120px;
+            position: fixed;
+            transition: .6s;
+            z-index: 5;
+        }
+
+        .navbar li a {
+            color: #f2f2f2;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: 200;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .navbar-nav {
+            display: table;
+            width: 50%;
+            margin: 0;
+        }
+
+        .navbar-nav>li {
+            display: table-cell;
+        }
+
+        #logo {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            top: 50%;
+            left: 50%;
+            /* margin: 0 0;
+padding: 0 0; */
+            z-index: 10;
+        }
+
+        #logo-wrapper {
+            position: fixed;
+            left: 0%;
+            top: 0;
+            width: 14%;
+            height: 120px;
+            padding: 0 0;
+            margin: 0 0;
+            transition: .6s;
+            z-index: 10;
+        }
+    </style>
+	
+	
+  <style type="text/css">
+  	
+  	.volunteer-title-div {
+    text-align: center;
+    color: #a4c2a5;
+    padding-top: 5vh;
+	}
+
+	body{
+		text-align: center;
+	}
+	 
+    h1{
+        padding-top: 100px;
+    }
+  </style>
+  
+
+</head>
+<body>
+
+
+ <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="aboutUs.html">About Us<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="successStories.html">Success Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="adoptableAnimals.html">Available Animals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="volunteer.html">Volunteer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="donate.html">Donate</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <a href="index.html" id="logo-wrapper">
+        <img id="logo" src="../logo_transparent2.png">
+    </a>
+
+
+	<div class="volunteer-title-div">
+	 		<h1> Volunteer Form </h1> 
+			<h2> We always need more volunteers! Sign up here! </h2></br>
+	</div>
+
+
+	<form> 
+		<label for= "form">Full Name: </label>
+		<input type="text" name="form" required><br><br>
+
+		<label for="form"> Email: </label>
+		<input type="text" name="form" required><br><br>
+
+		<label for="form"> Age: </label>
+		<input type="text" name="form" required><br><br>
+
+		<label for="form"> Why do you want to volunteer? </label> </br>
+		<textarea id="form" name="volunteerReason" placeholder="type here..." style="width:500px " required></textarea> <br><br>
+
+		<label for="form"> Do you have any previous experiencing volunteering or working with animals? </label> </br>
+		<textarea id="form" name="previousExperience" placeholder="type here..." style="width:500px " required></textarea> <br>
+
+
+		<br> Which days are you able to volunteer? <br>
+			
+		<label for="days"> Monday </label> 
+		<input type="checkbox" name="days"> <br>
+		<label for="days"> Tuesday </label> 
+		<input type="checkbox" name="days"> <br>
+		<label for="days"> Wednesday </label> 
+		<input type="checkbox" name="days"> <br>
+		<label for="days"> Thursday </label> 
+		<input type="checkbox" name="days"> <br>
+		<label for="days"> Friday </label> 
+		<input type="checkbox" name="days"> <br>
+		<label for="days"> Saturday </label> 
+		<input type="checkbox" name="days"> <br>
+		<label for="days"> Sunday </label> 
+		<input type="checkbox" name="days"> <br>
+
+		<br><br><input type="submit" name="submitButton" id="submitButton" required><br><br>
+
+	</form>
+
+   <footer>
+            <p class="copy"> Copyright © 2020 Peters Pets. All rights reserved.</p>
+        </footer>
+
+	<script type="text/javascript">
+		     document.getElementById("submitButton").onclick = function(){  
+                alert('Your form has been submitted! We will reach out when we find a position for you!');
+            }
+	</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
 </html>
