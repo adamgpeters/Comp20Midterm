@@ -1,8 +1,9 @@
 body {
-    background-color: #566246;
+    background-color: #ffffff;
 }
 
 .donate-whole {
+    padding-top: 100px;
     text-align: center;  
 }
 
@@ -13,22 +14,22 @@ body {
 }
 
 .donate-para-div { 
-    background-color:#3c4432;
+    background-color:#c1e2c2;
     padding-top: 3vh;
     padding-bottom: 3vh;
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;
     line-height: 30px;
-    color: #a4c2a5;
+    color: #131312;
     margin-bottom: 8vh;
 }
 
 .form-div{
-    padding-bottom: 5px;
+    padding-bottom: 100px;
 }
 
 #donate-title {
-    font-family: Impact, Charcoal, sans-serif;
+    font-family: sans-serif;
     font-size: 50px;
     line-height: 45px;
     padding-bottom: 0px;
@@ -38,7 +39,7 @@ body {
 }
 
 #form-text {
-    font-family: Impact, Charcoal, sans-serif;
+    font-family: sans-serif;
     color: #a4c2a5;
     font-size: 30px;
     padding-bottom: 0px;
@@ -69,4 +70,18 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+
+footer {
+    background: #f2f2f2;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #131312;
+    padding: 15px;
 }
