@@ -1,11 +1,4 @@
 
-
-
-
-/*  */
-
-/* First create the pawprints */
-
 for (let i = 0; i < 10; i++) {
     $('#pawprints').append('<img class="paw" id="paw-' + i + '" style="transition: .3s;opacity:0;position: absolute;width: 5%;" src="../assets/pawprint.png" />');
 }
@@ -16,11 +9,11 @@ $('.paw').each(function (i) {
     let vertOffset = Math.random() * h / 4 + h / 8;
     var func = 0;
     var rotate = 90;
-    if (i < 4){
+    if (i < 4) {
         func = -1 * i * h / 6 + h / 6;
         rotate = Math.random() * 30 + 90;
     } else if (i > 6) {
-        func = -1 * (i-3) * h / 6 + h / 6;
+        func = -1 * (i - 3) * h / 6 + h / 6;
         rotate = Math.random() * 30 + 90;
     } else {
         rotate = Math.random() * 30 + 75;
@@ -39,9 +32,9 @@ $('.paw').each(function (i) {
 });
 
 function showPrints() {
-    $('.paw').each( function(i) {
-        setTimeout(() => {  
-            $(this).css({'opacity':'1'});
+    $('.paw').each(function (i) {
+        setTimeout(() => {
+            $(this).css({ 'opacity': '1' });
         }, i * 200)
     });
 }
@@ -50,7 +43,7 @@ $(document).ready(function () {
     // hideIfBelow();
     /* Every time the window is scrolled ... */
 
-    
+
     $(window).scroll(function () {
         var bottom_of_window = $(window).scrollTop() + $(window).height();
         if (bottom_of_window > $('#pawprints').position().top + 75) {

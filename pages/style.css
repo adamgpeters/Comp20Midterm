@@ -8,7 +8,6 @@ html, body {
   scroll-behavior: smooth;
 }
 
-
 .navbar {
       width: 100%; 
       
@@ -194,15 +193,15 @@ html, body {
   text-align: center;
 }
 
-#row1{
+#help-row1{
   display: inline-block;
   background-size: contain;
 }
-#row2{
+#help-row2{
   background-size: contain;
   text-align: center;
 }
-#row3{
+#help-row3{
   background-size: contain;
   text-align: center;
 }
@@ -221,7 +220,7 @@ html, body {
 	transition: .3s ease-in-out
 }
 
-#row1 a{
+#help-row1 a{
   width: 90%;
   height: 90%;
   display: inline-block;
@@ -237,7 +236,7 @@ html, body {
   transform: scale(1.05);
 }
 
-#row2 a{
+#help-row2 a{
   width: 90%;
   height: 90%;
   display: inline-block;
@@ -246,7 +245,7 @@ html, body {
 
   background-image: url("../assets/dog_marsh.jpg");
 }
-#row3 a{
+#help-row3 a{
   width: 90%;
   height: 90%;
   display: inline-block;
@@ -289,19 +288,25 @@ html, body {
 
 #statistics-container {
   text-align: center;
-  height: 50%;
-  width: 100%;
-  padding-top: 0%;
+  left:50%;
+  transform: translateX(-50%);
+
+  /* position: absolute; */
+  /* padding-top: 0%; */
 }
 
 #statistics {
-  background-size: auto 100%;
+  word-wrap: break-word;
   height: 40vw;
-  text-align: center;
-  display: inline-block;
-  background-repeat: no-repeat;
-  transform: scale(1.4);
-  background-image: url("../assets/alaskan_malamute_puppies.jpg");
+  /* left: 50%; */
+  /* text-align: center; */
+  /* transform: translateX(50%); */
+  /* display: inline-block; */
+  /* background-repeat: no-repeat; */
+  /* background-position:50% 50%; */
+
+  /* transform: scale(1.4);
+  background-image: url("../assets/alaskan_malamute_puppies.jpg"); */
 }
 
 #stat1-photo {
@@ -344,7 +349,7 @@ html, body {
 }
 
 #statistics p {
-  font-size: 20px;
+  /* font-size: 20px; */
   color: #fff;
   padding: 15px 20px;
 }
@@ -361,19 +366,79 @@ html, body {
 
 #help-today {
   position: relative;
-  padding: 5%;
+  /* padding: 5%; */
+  margin-top: 5%;
+  margin-bottom: 2%;
   text-align: center;
   font-size: 40px;
   font-weight: 600;
 }
 
 #need-family {  
-  padding: 12% 0;
+  margin-top: 10%;
+  /* padding: 12% 0; */
   text-align: center;
   font-size: 40px;
   font-weight: bold;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
+
+.green-boarder {
+  border: 4px #a4c2a5 solid;
+  /* width: auto; */
+  padding: 4px 20px;
+  text-align: center;
+  border-radius: 25px;
+  display: inline-block;
+  /* margin-left: 50%; */
+  /* background: #a4c2a5; */
+  /* padding: 20px; */
+  /* word-wrap: break-word; */
+  
+  /* display: inline-block; */
+  /* height: auto; */
+
+  /* width: 200px;
+  height: 150px; */
+}
+
+
+.flex-row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.flex-column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+  width: 100px;
+  height: 10px;
+  /* max-width: 40%; */
+  /* width: 30vh; */
+}
+
+.flex-column img {
+  margin-top: 8px;
+  /* max-width: 50vh; */
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.stat-text {
+  position: absolute;
+  text-align: center;
+  /* z-index: 10; */
+  color: #fff;  
+  font-size: 30px;
+  /* font-weight: 800; */
+  text-align: center;
+}
+
 
 @keyframes fadein {
   from {

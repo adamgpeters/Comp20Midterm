@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<script>
+  <script>
     window.onscroll = function () { scrollFunction() };
 
     // window.onload = function() {
@@ -67,6 +67,7 @@
       <p>
         You can help an animal in need
       </p>
+
       <a id="help-today-button" href="#help-today">
         Help Today
       </a>
@@ -74,9 +75,11 @@
   </div>
 
   <div id="ourmission">
+    <span class="green-boarder">
     <div id="ourmission-underline">
-      <a href="aboutUs.html">Our Mission</a>
-    </div>
+        <a href="aboutUs.html">Our Mission</a>
+      </div>
+    </span>
     <div id="ourmission-text">
       <p>
         To help lost and abandoned pets find a loving home
@@ -88,15 +91,71 @@
 
   <div style="display: block;width: 100%;height:30vh;"></div>
 
-  <div class="hideme" id="statistics-container">
-    <p id="stat-header">
-      In 2019, you...
-    </p>
+  <div class="hideme" id="statistics-container" style="position: relative;display: inline-block;text-align: center;">
+    <div style="text-align: center;">
+      <div class="green-boarder">
+        <span id="stat-header">
+          In 2019, you...
+        </span>
+      </div>
+    </div>
     <div id="statistics" class="hideme">
-      <p id="stat1">
+      </br>
+      </br>
+      </br>
+      <div id="stat-row1" class="row" style="transform: translateX(0);">
+
+        <div class="col-lg-4 col-md-6 mb-4" style="transform: translateX(50%);">
+
+          <img src="../assets/tongue_out.png" id="img1" class="img-fluid mb-4" alt="" data-wow-delay="0.5s">
+
+        </div>
+      <div id="stat1-text" class="stat-text">
+        <p>
+          found a home for 100 of our pets
+        </p>
+      </div>
+        <!-- <div class="col-md-8">
+            <p>Lots of text here...With the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a .clearfix and o</p>
+        </div> -->
+
+
+        <div id="stat-row2" class="col-lg-4 col-md-6 mb-4" style="transform: translateX(50%);">
+
+          <img id="img2" src="../assets/Newfoundland-1.jpg" class="img-fluid mb-4" alt="" data-wow-delay="0.2s">
+
+          <img id="img3" src="../assets/reilly23.jpg" class="img-fluid mb-4" alt="" data-wow-delay="0.1s">
+
+        </div>
+
+        <div id="stat2-text" class="stat-text">
+          <p>
+            reduced the number of stray animals in medford by half
+          </p>
+        </div>
+        <div id="stat3-text" class="stat-text">
+          <p>
+            helped us feed hundreds of forgotten animals with your donations
+          </p>
+        </div>
+  
+      </div>
+
+      <!-- <div class="flex-row">
+        <div class="flex-column">
+          <img src="../assets/reilly1.jpg">
+        </div>
+        <div class="flex-column">
+          <img src="../assets/Newfoundland-1.jpg">
+          <img src="../assets/tongue_out.png">
+        </div>       
+        </div>
+      </div> -->
+
+      <!-- <p id="stat1">
         found a home for 100 of our pets
-      </p>
-      <p id="stat2">
+      </p> -->
+      <!-- <p id="stat2">
         saved 200 animals from living off the streets
       </p>
       <p id="stat3">
@@ -104,87 +163,59 @@
       </p>
       <p id="stat4">
         helped us feed hundreds of forgotten animals with your donations
-      </p>
+      </p> -->
     </div>
   </div>
 
-  <div class="hideme" id="need-family">
-    <p id="underline" class="hideme">
-      But we still have countless pets in need of a family.
-    </p>
+
+  <!-- <script>
+    var elements = document.getElementsByClassName("flex-column");
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].style.flex = "50%";
+    }
+  </script> -->
+
+
+  <div class="hideme" style="display:block;text-align:center;position:relative; padding-top: 5%;">
+    <div id="need-family">
+      <span class="hideme" >
+        But we still have countless pets in need of a family.
+      </span>
+    </div>
   </div>
 
-  <!-- <table style="width:100%;table-layout: fixed;border-collapse: collapse;">
-    <tr id="row1" style="text-align:center;">
-      <td class="col1">
-        Benny
-      </td>
-      <td class="col2" style="width:33.33%;">
-        Pluto
-      </td>
-      <td class="col3" style="width:33.33%;">
-        Merlin
-      </td>
-    </tr>
-    <tr id="row2">
-      <td class="col1" style="width:33.33%;">
-        asdfasdf
-      </td>
-      <td class="col2" style="width:33.33%;">
-      </td>
-      <td class="col3" style="width:33.33%;">
-      </td>
-    </tr>
-    <tr id="row3">
-      <td class="col1" style="width:33.33%;">
-      </td>
-      <td class="col2" style="width:33.33%;">
-      </td>
-      <td class="col3" style="width:33.33%;">
-      </td>
-    </tr>
 
 
-    <tr id="row4">
-      <td class="col1" style="width:33.33%;">
-      </td>
-      <td class="col2" style="width:33.33%;">
-      </td>
-      <td class="col3" style="width:33.33%;">
-      </td>
-    </tr>
-
-  </table> -->
-
-
-  <div id="help-today">
-    <a >
-      Help Today
-    </a>
+  <div style="text-align: center;">
+    <div class="hideme green-boarder" id="help-today">
+      <span>
+        Help Today
+      </span>
+    </div>
   </div>
 
   <div class="row">
-    <div class="column hideme" id="row1"><a href="#">
-      <div>
-        <p>
-          Adopt
-        </p>
-      </div>
-    </a></div>
-    <div class="column hideme" id="row2"><a href="#">
-      <div>
-        <p>
-          Donate
-        </p>
-      </div>
-    </a></div>
-    <div class="column hideme" id="row3"><a href="#">
+    <div class="column hideme" id="help-row1"><a href="adoptableAnimals.html">
+        <div>
+          <p>
+            Adopt
+          </p>
+        </div>
+      </a></div>
+    <div class="column hideme" id="help-row2"><a href="donate.html">
+        <div>
+          <p>
+            Donate
+          </p>
+        </div>
+      </a></div>
+    <div class="column hideme" id="help-row3"><a href="volunteer.html">
         <div>
           <p>
             Volunteer
           </p>
         </div>
-    </a></div>
+      </a></div>
   </div>
 
 
@@ -229,7 +260,7 @@
     });
   </script>
 
-  <script>
+  <!-- <script>
 
     $(document).ready(function () {
       // hideIfBelow();
@@ -242,12 +273,49 @@
       });
 
     });
-  </script>
+  </script> -->
 
 
 
   <script src="pawprints.js"></script>
   <script src="youhelped.js"></script>
+  
+
+  <script>
+
+    function place_statistics() {
+      $("#stat1-text").css({"left": "" + left_amount + "px", "width":  $("#img1").outerWidth() + "px"});      
+      $("#stat2-text").css({"left": "" + left_amount + "px", "width":  $("#img2").outerWidth() + "px"});      
+      $("#stat3-text").css({"left": "" + left_amount + "px", "width":  $("#img3").outerWidth() + "px"});      
+
+      $("#stat-row1").css({"transform": 'translateX("0%")'});
+      $("#stat-row2").css({"transform": 'translateX("50%")'});
+
+      var left_amount = $('#img1').offset().left  + $('#img1').outerWidth() / 2 - $("#stat1-text").outerWidth() / 2;
+      console.log(left_amount);
+      $("#stat1-text").css({"left": "" + left_amount + "px", "width":  $("#img1").outerWidth() + "px"});      
+    
+      var left_amount = $('#img2').offset().left  + $('#img2').outerWidth() / 2 - $("#stat2-text").outerWidth() / 2;
+      console.log(left_amount);
+      $("#stat2-text").css({"left": "" + left_amount + "px", "width":  $("#img2").outerWidth() + "px"});      
+      
+      var left_amount = $('#img3').offset().left  + $('#img3').outerWidth() / 2 - $("#stat3-text").outerWidth() / 2;
+      var top_amount = $('#img3').position().top;
+      console.log(left_amount);
+      $("#stat3-text").css({"left": "" + left_amount + "px", "width":  $("#img3").outerWidth() + "px"});      
+      $("#stat3-text").css({"top": "" + top_amount + "px"});   
+
+    }  
+
+    // window.onload = function (){
+    place_statistics();
+
+    // };
+    // place_statistics();
+    window.addEventListener('resize', place_statistics);
+
+</script>
+
 </body>
 
 </html>
