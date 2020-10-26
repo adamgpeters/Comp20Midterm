@@ -8,6 +8,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="home_style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <meta name="viewport" content="initial-scale=1.0, width=device-width"> -->
 
   <script>
     window.onscroll = function () { scrollFunction() };
@@ -27,33 +28,48 @@
 
 <body>
   <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a> <!-- update -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- changed aria controls -->
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="aboutUs.html">About Us<span class="sr-only">(current)</span></a>
+          <div class="ourmission-underline">
+            <a class="nav-link" href="aboutUs.html">About Us</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+        <li class="nav-item active">
+          <div class="ourmission-underline">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="successStories.html">Success Stories</a>
+        <li class="nav-item active">
+          <div class="ourmission-underline">
+            <a class="nav-link" href="successStories.html">Success Stories</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="adoptableAnimals.html">Available Animals</a>
+        <li class="nav-item active">
+          <div class="ourmission-underline">
+            <a class="nav-link" href="adoptableAnimals.html">Available Animals</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="volunteer.html">Volunteer</a>
+        <li class="nav-item active">
+          <div class="ourmission-underline" style="text-align:center;">
+            <a class="nav-link" href="volunteer.html">Volunteer</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="donate.html">Donate</a>
+        <li class="nav-item active">
+          <div class="ourmission-underline">
+            <a class="nav-link" href="donate.html">Donate</a>
+          </div>
         </li>
       </ul>
     </div>
   </nav>
+
   <a href="index.html" id="logo-wrapper">
     <img id="logo" src="../logo_transparent2.png">
   </a>
@@ -71,14 +87,14 @@
 
   <div id="ourmission">
     <span class="green-boarder">
-    <div id="ourmission-underline">
+      <div class="ourmission-underline">
         <a href="aboutUs.html">Our Mission</a>
       </div>
     </span>
     <div id="ourmission-text">
-      <p>
+      <h1>
         To help lost and abandoned pets find a loving home
-      </p>
+      </h1>
     </div>
   </div>
 
@@ -98,28 +114,24 @@
       </br>
       </br>
       </br>
-      <div id="stat-row1" class="row" style="transform: translateX(0);">
+      <div id="stat-row1" class="row" style="width: 100%;">
 
-        <div class="col-lg-4 col-md-6 mb-4" style="transform: translateX(50%);">
+        <div id="image-left" class="col-lg-4 col-md-6 mb-4" style="">
 
-          <img src="../assets/tongue_out.png" id="img1" class="img-fluid mb-4" alt="" data-wow-delay="0.5s">
+          <img src="../assets/tongue_out.png" id="img1" class="rounded img-fluid mb-4" alt="" data-wow-delay="0.5s">
 
         </div>
-      <div id="stat1-text" class="stat-text">
-        <p>
-          found a home for 100 of our pets
-        </p>
-      </div>
-        <!-- <div class="col-md-8">
-            <p>Lots of text here...With the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a .clearfix and o</p>
-        </div> -->
+        <div id="stat1-text" class="stat-text">
+          <p>
+            found a home for 100 of our pets
+          </p>
+        </div>
 
+        <div id="stat-row2" class="col-lg-4 col-md-6 mb-4" style="width: 100%;">
 
-        <div id="stat-row2" class="col-lg-4 col-md-6 mb-4" style="transform: translateX(50%);">
+          <img id="img2" src="../assets/Newfoundland-1.jpg" class="rounded img-fluid mb-4" alt="" data-wow-delay="0.2s">
 
-          <img id="img2" src="../assets/Newfoundland-1.jpg" class="img-fluid mb-4" alt="" data-wow-delay="0.2s">
-
-          <img id="img3" src="../assets/reilly23.jpg" class="img-fluid mb-4" alt="" data-wow-delay="0.1s">
+          <img id="img3" src="../assets/reilly23.jpg" class="rounded img-fluid mb-4" alt="" data-wow-delay="0.1s">
 
         </div>
 
@@ -133,53 +145,19 @@
             helped us feed hundreds of forgotten animals with your donations
           </p>
         </div>
-  
+
       </div>
 
-      <!-- <div class="flex-row">
-        <div class="flex-column">
-          <img src="../assets/reilly1.jpg">
-        </div>
-        <div class="flex-column">
-          <img src="../assets/Newfoundland-1.jpg">
-          <img src="../assets/tongue_out.png">
-        </div>       
-        </div>
-      </div> -->
-
-      <!-- <p id="stat1">
-        found a home for 100 of our pets
-      </p> -->
-      <!-- <p id="stat2">
-        saved 200 animals from living off the streets
-      </p>
-      <p id="stat3">
-        reduced the number of stray animals in medford by half
-      </p>
-      <p id="stat4">
-        helped us feed hundreds of forgotten animals with your donations
-      </p> -->
     </div>
   </div>
 
-
-  <!-- <script>
-    var elements = document.getElementsByClassName("flex-column");
-    for (let i = 0; i < elements.length; i++) {
-      elements[i].style.flex = "50%";
-    }
-  </script> -->
-
-
-  <div class="hideme" style="display:block;text-align:center;position:relative; padding-top: 5%;">
+  <div class="hideme" id="need-family-wrapper">
     <div id="need-family">
-      <span class="hideme" >
+      <span class="hideme">
         But we still have countless pets in need of a family.
       </span>
     </div>
   </div>
-
-
 
   <div style="text-align: center;">
     <div class="hideme green-boarder" id="help-today">
@@ -189,7 +167,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div id="help-now-container" class="row" style="font-size: 10px; width: 100%;">
     <div class="column hideme" id="help-row1"><a href="adoptableAnimals.html">
         <div>
           <p>
@@ -211,7 +189,12 @@
           </p>
         </div>
       </a></div>
-  </div>
+    </div>
+
+  <footer>
+    <p class="copy"> Copyright © 2020 Peters Pets. All rights reserved.</p>
+  </footer>
+
 
 
   <!-- <p>this is out website</p> -->
@@ -255,61 +238,41 @@
     });
   </script>
 
-  <!-- <script>
-
-    $(document).ready(function () {
-      // hideIfBelow();
-      /* Every time the window is scrolled ... */
-      $(window).scroll(function () {
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        if (bottom_of_window > $('#underline').position().top) {
-          $('#underline').css({'visibility': 'visible', 'width':"100%"})
-        }
-      });
-
-    });
-  </script> -->
-
-
-
   <script src="pawprints.js"></script>
   <script src="youhelped.js"></script>
-  
+
 
   <script>
 
     function place_statistics() {
-      $("#stat1-text").css({"left": "" + left_amount + "px", "width":  $("#img1").outerWidth() + "px"});      
-      $("#stat2-text").css({"left": "" + left_amount + "px", "width":  $("#img2").outerWidth() + "px"});      
-      $("#stat3-text").css({"left": "" + left_amount + "px", "width":  $("#img3").outerWidth() + "px"});      
+      $("#stat1-text").css({ "left": "" + left_amount + "px", "width": $("#img1").outerWidth() + "px" });
+      $("#stat2-text").css({ "left": "" + left_amount + "px", "width": $("#img2").outerWidth() + "px" });
+      $("#stat3-text").css({ "left": "" + left_amount + "px", "width": $("#img3").outerWidth() + "px" });
 
-      $("#stat-row1").css({"transform": 'translateX("0%")'});
-      $("#stat-row2").css({"transform": 'translateX("50%")'});
+      $("#stat-row1").css({ "transform": 'translateX("0%")' });
+      $("#stat-row2").css({ "transform": 'translateX("50%")' });
 
-      var left_amount = $('#img1').offset().left  + $('#img1').outerWidth() / 2 - $("#stat1-text").outerWidth() / 2;
+      var left_amount = $('#img1').offset().left + $('#img1').outerWidth() / 2 - $("#stat1-text").outerWidth() / 2;
       console.log(left_amount);
-      $("#stat1-text").css({"left": "" + left_amount + "px", "width":  $("#img1").outerWidth() + "px"});      
-    
-      var left_amount = $('#img2').offset().left  + $('#img2').outerWidth() / 2 - $("#stat2-text").outerWidth() / 2;
+      $("#stat1-text").css({ "left": "" + left_amount + "px", "width": $("#img1").outerWidth() + "px" });
+
+      var left_amount = $('#img2').offset().left + $('#img2').outerWidth() / 2 - $("#stat2-text").outerWidth() / 2;
       console.log(left_amount);
-      $("#stat2-text").css({"left": "" + left_amount + "px", "width":  $("#img2").outerWidth() + "px"});      
-      
-      var left_amount = $('#img3').offset().left  + $('#img3').outerWidth() / 2 - $("#stat3-text").outerWidth() / 2;
+      $("#stat2-text").css({ "left": "" + left_amount + "px", "width": $("#img2").outerWidth() + "px" });
+
+      var left_amount = $('#img3').offset().left + $('#img3').outerWidth() / 2 - $("#stat3-text").outerWidth() / 2;
       var top_amount = $('#img3').position().top;
       console.log(left_amount);
-      $("#stat3-text").css({"left": "" + left_amount + "px", "width":  $("#img3").outerWidth() + "px"});      
-      $("#stat3-text").css({"top": "" + top_amount + "px"});   
+      $("#stat3-text").css({ "left": "" + left_amount + "px", "width": $("#img3").outerWidth() + "px" });
+      $("#stat3-text").css({ "top": "" + top_amount + "px" });
 
-    }  
+    }
 
-    // window.onload = function (){
     place_statistics();
 
-    // };
-    // place_statistics();
     window.addEventListener('resize', place_statistics);
 
-</script>
+  </script>
 
 </body>
 
