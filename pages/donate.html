@@ -26,7 +26,6 @@
     <script>
         function gotMessage() {
             alert('Thank you for your donation!');
-            alert('We got your message! We will get back to you as soon as we can!');
         }
     </script>
     <contact-main>
@@ -99,31 +98,31 @@
                     <div class="form-div">
                         <form action="#" onsubmit=" gotMessage();">
                             <label for="first-name"></label> <br>
-                            <input type="text" id="fname" name="name" placeholder="first name"> <br>
+                            <input required type="text" id="fname" name="name" placeholder="first name"> <br>
                             <label for="last-name"></label> <br>
-                            <input type="text" id="lname" name="name" placeholder="last name"> <br>
+                            <input required type="text" id="lname" name="name" placeholder="last name"> <br>
                             <label for="email"></label> <br>
-                            <input type="text" id="email" name="email" placeholder="email"> <br>
+                            <input required type="text" id="email" name="email" placeholder="email"> <br>
                             <label for="phone number"></label> <br>
-                            <input type="text" id="num" name="num" placeholder="phone number"> <br>
+                            <input required type="text" id="num" name="num" placeholder="phone number"> <br>
                             <label for="donation"></label> <br>
-                            <input type="text" id="donation" name="donation" placeholder="donation amount"> <br>
+                            <input required type="text" id="donation" name="donation" placeholder="donation amount"> <br>
                             <label for="card number"></label> <br>
-                            <input type="text" id="card number" name="card" placeholder="card number"> <br>
+                            <input required type="text" id="card number" name="card" placeholder="card number"> <br>
                             <label for="expiration date"></label> <br>
-                            <input type="text" id="date" name="date" placeholder="MM/YY"> <br>
+                            <input required type="text" id="date" name="date" placeholder="MM/YY"> <br>
                             <label for="cvc"></label> <br>
-                            <input type="text" id="cvc" name="cvc" placeholder="cvc"> <br>
+                            <input required type="text" id="cvc" name="cvc" placeholder="cvc"> <br>
                             <label for="address"></label> <br>
-                            <input type="text" id="address" name="address" placeholder="address"> <br>
+                            <input required type="text" id="address" name="address" placeholder="address"> <br>
                             <label for="city"></label> <br>
-                            <input type="text" id="city" name="city" placeholder="city"> <br>
+                            <input required type="text" id="city" name="city" placeholder="city"> <br>
                             <label for="state"></label> <br>
-                            <input type="text" id="state" name="state" placeholder="state"> <br>
+                            <input required type="text" id="state" name="state" placeholder="state"> <br>
                             <label for="zipcode"></label> <br>
-                            <input type="text" id="zipcode" name="zipcode" placeholder="zipcode"> <br> <br> <br>
+                            <input required type="text" id="zipcode" name="zipcode" placeholder="zipcode"> <br> <br> <br>
 
-                            <input type="submit" value="Donate">
+                            <input required type="submit" value="Donate">
                         </form>
                     </div>
                 </section>
