@@ -1,0 +1,607 @@
+body{
+  font-family: sans-serif;
+  max-width: 100vw;
+  max-height: 100vh;
+  padding: 0 0;
+  margin: 0 0;
+  /* position: fixed; */
+}
+
+@media (hover: none) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@media (hover: hover) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+      width: 100vw; 
+      
+      min-height: 120px;
+      position: fixed;
+      transition: .6s;
+      z-index: 5;
+  }
+  
+.navbar li a {
+    color: #f2f2f2;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 200;
+    /* font-size: 20px; */
+    text-align: center;
+}
+
+@media (hover: none) {
+  .navbar li a {
+    font-size: 40px;
+  }
+}
+@media (hover: hover) {
+  .navbar li a {
+    font-size: 20px;
+  }
+}
+
+.navbar-nav {
+    /* display:table; */
+    /* removed */
+    width:50%;
+    margin: 0;
+}
+.navbar-nav > li {
+    /* display:table-cell; */
+     /* removed */
+}
+
+#logo {
+  height:100%;
+  width: 100%;
+  object-fit: contain; 
+  top:50%;
+  left:50%;
+  /* margin: 0 0;
+  padding: 0 0; */
+  z-index: 10;
+}
+
+#logo-wrapper {
+  position: fixed;
+  left:0%;
+  top:0;
+  width: 14%;
+  height: 120px;
+  padding: 0 0;
+  margin: 0 0;
+  transition: .6s;
+  z-index: 10;
+}
+
+.pull-left {
+  height: 100%;
+  width: 10%;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../assets/cute_cat.jpg");
+
+  /* Set a specific height */
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (hover: none) {
+  .parallax {
+    height: 60vh;
+  }
+}
+
+@media (hover: hover) {
+  .parallax {
+    height: 80vh;
+  }
+}
+
+.container-cover {
+  position: relative;
+  top: 40%;
+  margin: 0 0;
+  display: block;
+  padding: 0;
+  width: 100%;
+}
+
+#cover-text {
+  bottom: 50%;  
+  width: 100%;  
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  color: #f2f2f2;
+
+}
+
+#cover-text p {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+#cover-text a {
+  animation: fadein 4s;
+  -moz-animation: fadein 4s; /* Firefox */
+  -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -o-animation: fadein 4s; /* Opera */
+}
+
+#cover-text p {
+  /* position: absolute; */
+  /* margin-bottom: 100px; */
+}
+
+#help-today-button {
+  position: absolute;
+  display: inline-block;
+  border-style: solid;
+  margin-top: 5%;
+  padding: 10px 5px;
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 30px;
+  text-decoration: none;
+  color: rgba(242, 242, 242, 1);
+  background-color: rgba(242, 242, 242, 0);
+  transition: .3s;
+}
+
+#help-today-button:hover {
+  background-color: rgba(242, 242, 242, .3);
+}
+
+#ourmission {
+  position: relative;
+  font-weight: bold;
+  margin-top: 50px;
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+
+  /* animation: fadein 6s; */
+  /* -moz-animation: fadein 6s; */
+  /* -webkit-animation: fadein 6s;  */
+  /* -o-animation: fadein 6s;  */
+}
+
+@media (hover: hover) {
+  #ourmission {
+    font-size: 40px;
+  }
+}
+@media (hover: none) {
+  #ourmission {
+    font-size: 60px;
+  }
+}
+
+.ourmission-underline a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.ourmission-underline a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  background-color: #a4c2a5;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.ourmission-underline > a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+#ourmission #ourmission-text {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-bottom: 3%; */
+}
+
+@media (hover: none) {
+  #ourmission #ourmission-text {
+    font-size: 40px;
+  }
+
+}
+@media (hover: hover) {
+  #ourmission #ourmission-text {
+    font-size: 30px;
+  }
+}
+
+.column {
+  display: inline-block;
+  text-align: center;
+  width: 33.33%;
+  height: 33vw;
+  text-align: center;
+}
+
+@media (hover: none) {
+  .column {
+    height: 33%;
+  }
+
+}
+
+
+
+
+#help-row1{
+  /* height: 100%; */
+  display: inline-block;
+  background-size: contain;
+}
+#help-row2{
+  /* height: 100%; */
+  background-size: contain;
+  text-align: center;
+}
+#help-row3{
+  /* height: 100%; */
+  background-size: contain;
+  text-align: center;
+}
+
+@media (hover: none) {
+  #help-row1,#help-row2,#help-row3 {
+    height: 100%;
+  }
+}
+
+.column a {
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out
+}
+
+#help-row1 a{
+  width: 90%;
+  height: 90%;
+  display: inline-block;
+  margin: 0 auto;
+  background-size: cover;
+  background-image: url("../assets/scout.jpg");
+}
+
+.row div a:hover {
+  opacity: 0.9;
+  background-size: cover;
+  filter: alpha(opacity=90); /* msie */
+  transform: scale(1.05);
+}
+
+#help-row2 a{
+  width: 90%;
+  height: 90%;
+  display: inline-block;
+  margin: 0 auto;
+  background-size: cover;
+
+  background-image: url("../assets/dog_marsh.jpg");
+}
+#help-row3 a{
+  width: 90%;
+  height: 90%;
+  display: inline-block;
+  margin: 0 auto;
+  background-size: cover;
+  background-image: url("../assets/mance.jpg");
+}
+
+.row a {
+  position: relative;
+}
+
+.row a div {
+  bottom: 50%;  
+  width: 100%;  
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  color: #f2f2f2;
+}
+
+.row::after {
+  content: "";
+  clear: both;  
+  display: table;
+}
+
+.row {
+  width: 100%;
+  padding: 0 0;
+  margin: 0 0;
+  font-size: 30px;
+}
+
+.hideme {
+  opacity: 0;
+}
+
+#statistics-container {
+  text-align: center;
+  left:50%;
+  width: 100%;
+  padding: 0 0;
+  transform: translateX(-50%);
+
+  /* position: absolute; */
+  /* padding-top: 0%; */
+}
+
+#statistics {
+  word-wrap: break-word;
+  height: 40vw;
+  /* left: 50%; */
+  /* text-align: center; */
+  /* transform: translateX(50%); */
+  /* display: inline-block; */
+  /* background-repeat: no-repeat; */
+  /* background-position:50% 50%; */
+
+  /* transform: scale(1.4);
+  background-image: url("../assets/alaskan_malamute_puppies.jpg"); */
+}
+
+#stat1-photo {
+  background-size: contain;
+  background-size: auto 100%;
+
+  background-position: 0 50%;
+  background-image: url("../assets/tongue_out.png");
+
+  width: 90%;
+  height: 90%;
+  display: inline-block;
+  margin: 0 auto;
+
+  font-size: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  background-repeat: no-repeat;
+}
+
+#stat1-photo2 {
+  background-size: contain;
+
+  width: 90%;
+  height: 90%;
+  display: inline-block;
+  margin: 0 auto;
+
+  font-size: 40px;
+  text-align: center;
+  color: #f2f2f2;
+  background-repeat: no-repeat;
+
+}
+
+#stat-header  {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 10%;
+}
+
+#statistics p {
+  /* font-size: 20px; */
+  color: #fff;
+  padding: 15px 20px;
+}
+
+#statistics #stat2 {
+  opacity: .8;
+}
+#statistics #stat3 {
+  opacity: .6;
+}
+#statistics #stat4 {
+  opacity: .4;
+}
+
+#help-today {
+  position: relative;
+  /* padding: 5%; */
+  margin-top: 5%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#need-family {  
+  margin-top: 10%;
+  /* padding: 12% 0; */
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  /* text-decoration: underline; */
+}
+
+.green-boarder {
+  border: 4px #a4c2a5 solid;
+  /* width: auto; */
+  padding: 4px 20px;
+  text-align: center;
+  border-radius: 25px;
+  display: inline-block;
+  /* margin-left: 50%; */
+  /* background: #a4c2a5; */
+  /* padding: 20px; */
+  /* word-wrap: break-word; */
+  
+  /* display: inline-block; */
+  /* height: auto; */
+
+  /* width: 200px;
+  height: 150px; */
+}
+
+
+/* Create two equal columns that sits next to each other */
+.flex-column {
+  padding: 0 4px;
+  width: 100px;
+  height: 10px;
+}
+
+
+
+@media (hover: none) {
+  #stat-row1 {
+    transform: translateX(0%);
+  }
+  #stat-row1 {
+    transform: translateX(0);
+  }
+  #image-left {
+    transform: translateX(0);
+  }
+}
+
+@media (hover: hover) {
+  #stat-row1 {
+    transform: translateX(0%);
+  }
+  #stat-row2 {
+    transform: translateX(50%);
+  }
+  #image-left {
+    transform: translateX(50%);
+  }
+}
+
+.flex-column img {
+  margin-top: 8px;
+  /* max-width: 50vh; */
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.stat-text {
+  /* border: 4px #fff solid; */
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+}
+
+@media (hover: hover) {
+  .stat-text {
+    font-size: 30px;
+  }
+}
+
+@media (hover: none) {
+  .stat-text {
+    text-align: center;
+  }
+}
+
+#need-family-wrapper {
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 50px;
+  display:block;
+  text-align:center;
+  position:relative;
+}
+
+@media (hover: none) {
+  #need-family-wrapper {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 60vw;
+    padding-top: 30%;
+  }
+}
+
+@media (hover: hover) {
+  #need-family-wrapper {
+    left: 50%;
+  }
+}
+@media (hover: none) {
+  #help-now-container {
+    height: 30%;
+  }
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}

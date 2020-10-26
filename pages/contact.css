@@ -1,0 +1,65 @@
+body {
+    background-color: #566246;
+}
+
+.contact-whole {
+    padding-top: 100px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 10vh;
+    text-align: center;  
+}
+
+.contact-title-div {
+    font-size: 15px;
+    color: #a4c2a5;
+    padding-top: 5vh;
+    margin-bottom: 0px;
+}
+
+#contact-title {
+    font-family: sans-serif;
+    font-size: 50px;
+    line-height: 45px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px #131312;
+    font-stretch: ultra-expanded;
+}
+
+input[type=text], select, textarea {
+    width: 50%; /* Full width */
+    border:none;
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 5px; /* Add a top margin */
+    margin-bottom: 3px; /* Bottom margin */
+    resize: none;
+    background-color: #f1f2eb;
+    color:#4a4a48;
+    font-size: 15px;
+}
+
+input[type=submit] {
+    background-color: #a4c2a5;
+    color: #4a4a48;
+    font-size: 15px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background: #f2f2f2;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #131312;
+    padding: 15px;
+}
+
