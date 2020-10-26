@@ -3,11 +3,14 @@
         <title> Peters Pets </title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="home.css">
-        <link rel="stylesheet" type="text/css" href="contact.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../styles/home.css">
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
+        <link rel="stylesheet" type="text/css" href="../styles/contact.css">
     <script>
+
         window.onscroll = function () { scrollFunction() };
     
         // window.onload = function() {
@@ -66,8 +69,6 @@
                 object-fit: contain;
                 top: 50%;
                 left: 50%;
-                /* margin: 0 0;
-    padding: 0 0; */
                 z-index: 10;
             }
     
@@ -87,44 +88,52 @@
     <body>
         <header>
             <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"></a> <!-- update -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                  aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <!-- changed aria controls -->
+                  <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="aboutUs.html">About Us<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="successStories.html">Success Stories</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="adoptableAnimals.html">Available Animals</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="volunteer.html">Volunteer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="donate.html">Donate</a>
-                        </li>
-                    </ul>
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <div class="ourmission-underline">
+                        <a class="nav-link" href="aboutUs.html">About Us</a>
+                      </div>
+                    </li>
+                    <li class="nav-item active">
+                      <div class="ourmission-underline">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </div>
+                    </li>
+                    <li class="nav-item active">
+                      <div class="ourmission-underline">
+                        <a class="nav-link" href="successStories.html">Success Stories</a>
+                      </div>
+                    </li>
+                    <li class="nav-item active">
+                      <div class="ourmission-underline">
+                        <a class="nav-link" href="adoptableAnimals.html">Available Animals</a>
+                      </div>
+                    </li>
+                    <li class="nav-item active">
+                      <div class="ourmission-underline" style="text-align:center;">
+                        <a class="nav-link" href="volunteer.html">Volunteer</a>
+                      </div>
+                    </li>
+                    <li class="nav-item active">
+                      <div class="ourmission-underline">
+                        <a class="nav-link" href="donate.html">Donate</a>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-            </nav>
-            <a href="index.html" id="logo-wrapper">
+              </nav>
+                        <a href="index.html" id="logo-wrapper">
                 <img id="logo" src="../assets/logo_transparent2.png">
             </a>
         
             <!-- put at bottom of body -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
         </header>
         <contact-main>
             <section class="contact-whole">
@@ -135,9 +144,9 @@
                 <div class="form-div">
                     <form action="#" onsubmit=" gotMessage();">
                         <label for="name"></label> <br>
-                        <input type="text" id="fname" name="name" placeholder="first name, last name" required> <br>
+                        <input style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);" type="text" id="fname" name="name" placeholder="first name, last name" required> <br>
                         <label for="email"></label> <br>
-                        <input type="text" id="email" name="email" placeholder="email" required> <br>
+                        <input style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);" type="text" id="email" name="email" placeholder="email" required> <br>
                         <label for="subject"></label> <br>
                         <textarea id="subject" name="subject" placeholder="message..." style="height:200px"></textarea required> <br>
                         <br>
@@ -146,8 +155,15 @@
                 </div>
             </section>
         </contact-main>
-        <footer>
+        <footer style="position: fixed;">
             <p class="copy"> Copyright © 2020 Peters Pets. All rights reserved.</p>
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
     </body>
 </html>

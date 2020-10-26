@@ -15,6 +15,7 @@ h3 {
 }
 
 .navbar {
+  font-family: sans-serif;
   width: 100vw; 
   
   min-height: 120px;
@@ -24,58 +25,56 @@ h3 {
 }
 
 .navbar li a {
-color: #f2f2f2;
-padding: 14px 20px;
-text-decoration: none;
-font-weight: 200;
-/* font-size: 20px; */
-text-align: center;
+  font-family: sans-serif;
+  color: #f2f2f2;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: 200;
+  text-align: center;
 }
 
 @media (hover: none) {
-.navbar li a {
-font-size: 40px;
-}
+  .navbar li a {
+    font-size: 40px;
+  }
 }
 @media (hover: hover) {
-.navbar li a {
-font-size: 20px;
-}
+  .navbar li a {
+    font-size: 20px;
+  }
 }
 
 .navbar-nav {
-/* display:table; */
-/* removed */
-width:50%;
-margin: 0;
+  width:50%;
+  margin: 0;
 }
 
 #logo {
-height:100%;
-width: 100%;
-object-fit: contain; 
-top:50%;
-left:50%;
-z-index: 10;
+  height:100%;
+  width: 100%;
+  object-fit: contain; 
+  top:50%;
+  left:50%;
+  z-index: 10;
 }
 
 #logo-wrapper {
-position: fixed;
-left:0%;
-top:0;
-width: 14%;
-height: 120px;
-padding: 0 0;
-margin: 0 0;
-transition: .6s;
-z-index: 10;
+  position: fixed;
+  left:0%;
+  top:0;
+  width: 14%;
+  height: 120px;
+  padding: 0 0;
+  margin: 0 0;
+  transition: .6s;
+  z-index: 10;
 }
 
 .pull-left {
-height: 100%;
-width: 10%;
-padding: 0 0;
-margin: 0 0;
+  height: 100%;
+  width: 10%;
+  padding: 0 0;
+  margin: 0 0;
 }
 
 .ourmission-underline a {
@@ -100,3 +99,17 @@ margin: 0 0;
   visibility: visible;
   transform: scaleX(1);
 }
+
+footer {
+  background: #f2f2f2;
+  align-items: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #131312;
+  padding: 15px;
+}
+

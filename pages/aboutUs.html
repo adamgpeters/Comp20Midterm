@@ -4,19 +4,13 @@
         <meta charset="UTF-8">
         <meta name="description" content="information about our organization">
         <meta name="author" content="Mico">
-        <link rel="stylesheet" href="style.css">
         <title>About Us</title>
-
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/style.css">
         <script>
             window.onscroll = function () { scrollFunction() };
-        
-            // window.onload = function() {
-            //   var navHeight = $('#navbar').height();
-            //   document.getElementById("logo-wrapper").style.height = navHeight + "px";
-            // }; 
-        
             function scrollFunction() {
               if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
                 document.getElementById("navbar").style.minHeight = "60px";
@@ -75,6 +69,7 @@
             }
 
             .missionStatement {
+              padding-top: 10vh;
               box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             }
 
@@ -85,7 +80,6 @@
             }
 
             .teamInfo {
-              
               background-color: rgb(248, 248, 248);
             }
 
@@ -112,35 +106,49 @@
         </style>
     </head>
     <body>
-		<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="aboutUs.html">About Us<span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="successStories.html">Success Stories</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="adoptableAnimals.html">Available Animals</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="volunteer.html">Volunteer</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="donate.html">Donate</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<a href="index.html" id="logo-wrapper">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a> <!-- update -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- changed aria controls -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <div class="ourmission-underline">
+                <a class="nav-link" href="aboutUs.html">About Us</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <div class="ourmission-underline">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <div class="ourmission-underline">
+                <a class="nav-link" href="successStories.html">Success Stories</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <div class="ourmission-underline">
+                <a class="nav-link" href="adoptableAnimals.html">Available Animals</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <div class="ourmission-underline" style="text-align:center;">
+                <a class="nav-link" href="volunteer.html">Volunteer</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <div class="ourmission-underline">
+                <a class="nav-link" href="donate.html">Donate</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        <a href="index.html" id="logo-wrapper">
 			<img id="logo" src="../assets/logo_transparent2.png">
 		</a>
 

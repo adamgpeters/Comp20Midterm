@@ -4,11 +4,11 @@
         <title> Peters Pets </title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="home.css">
-        <!-- <link rel="stylesheet" type="text/css" href="successStories.css"> -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <script>
+
         window.onscroll = function () { scrollFunction() };
     
         // window.onload = function() {
@@ -29,94 +29,53 @@
       </script>
     
     
-    <style>
-        .navbar {
-            width: 100%;
-
-            min-height: 120px;
-            position: fixed;
-            transition: .6s;
-            z-index: 5;
-        }
-
-        .navbar li a {
-            color: #f2f2f2;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-weight: 200;
-            font-size: 20px;
-            text-align: center;
-        }
-
-        .navbar-nav {
-            display: table;
-            width: 50%;
-            margin: 0;
-        }
-
-        .navbar-nav>li {
-            display: table-cell;
-        }
-
-        #logo {
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
-            top: 50%;
-            left: 50%;
-            /* margin: 0 0;
-padding: 0 0; */
-            z-index: 10;
-        }
-
-        h3 {
-            font-family: sans-serif;
-        }
-        #logo-wrapper {
-            position: fixed;
-            left: 0%;
-            top: 0;
-            width: 14%;
-            height: 120px;
-            padding: 0 0;
-            margin: 0 0;
-            transition: .6s;
-            z-index: 10;
-        }
-    </style>
         <link rel="stylesheet" type="text/css" href="../styles/successStories.css">
     </head>
     <body>
         <header>
             <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"></a> <!-- update -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                  aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <!-- changed aria controls -->
+                  <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="aboutUs.html">About Us<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="successStories.html">Success Stories</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="adoptableAnimals.html">Available Animals</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="volunteer.html">Volunteer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="donate.html">Donate</a>
-                        </li>
-                    </ul>
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <div class="ourmission-underline">
+                        <a class="nav-link" href="aboutUs.html">About Us</a>
+                      </div>
+                    </li>
+                    <li class="nav-item active">
+                      <div class="ourmission-underline">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </div>
+                    </li>
+                    <li class="nav-item active">
+                      <div class="ourmission-underline">
+                        <a class="nav-link" href="successStories.html">Success Stories</a>
+                      </div>
+                    </li>
+                    <li class="nav-item active">
+                      <div class="ourmission-underline">
+                        <a class="nav-link" href="adoptableAnimals.html">Available Animals</a>
+                      </div>
+                    </li>
+                    <li class="nav-item active">
+                      <div class="ourmission-underline" style="text-align:center;">
+                        <a class="nav-link" href="volunteer.html">Volunteer</a>
+                      </div>
+                    </li>
+                    <li class="nav-item active">
+                      <div class="ourmission-underline">
+                        <a class="nav-link" href="donate.html">Donate</a>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-            </nav>
-            <a href="index.html" id="logo-wrapper">
+              </nav>
+                        <a href="index.html" id="logo-wrapper">
                 <img id="logo" src="../logo_transparent2.png">
             </a>
         
