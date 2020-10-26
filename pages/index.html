@@ -1,7 +1,279 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-    </body>
+
+<head>
+  <!-- Bootstrap -->
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="home_style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <meta name="viewport" content="initial-scale=1.0, width=device-width"> -->
+
+  <script>
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.minHeight = "60px";
+        document.getElementById("logo-wrapper").style.height = "60px";
+      } else {
+        document.getElementById("navbar").style.minHeight = "120px";
+        document.getElementById("logo-wrapper").style.height = "120px";
+      }
+    }
+
+  </script>
+</head>
+
+<body>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a> <!-- update -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- changed aria controls -->
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <div class="ourmission-underline">
+            <a class="nav-link" href="aboutUs.html">About Us</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <div class="ourmission-underline">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <div class="ourmission-underline">
+            <a class="nav-link" href="successStories.html">Success Stories</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <div class="ourmission-underline">
+            <a class="nav-link" href="adoptableAnimals.html">Available Animals</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <div class="ourmission-underline" style="text-align:center;">
+            <a class="nav-link" href="volunteer.html">Volunteer</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <div class="ourmission-underline">
+            <a class="nav-link" href="donate.html">Donate</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <a href="index.html" id="logo-wrapper">
+    <img id="logo" src="../logo_transparent2.png">
+  </a>
+  <div class="parallax">
+    <div id="cover-text">
+      <p>
+        You can help an animal in need
+      </p>
+
+      <a id="help-today-button" href="#help-today">
+        Help Today
+      </a>
+    </div>
+  </div>
+
+  <div id="ourmission">
+    <span class="green-boarder">
+      <div class="ourmission-underline">
+        <a href="aboutUs.html">Our Mission</a>
+      </div>
+    </span>
+    <div id="ourmission-text">
+      <h1>
+        To help lost and abandoned pets find a loving home
+      </h1>
+    </div>
+  </div>
+
+  <div id="pawprints" style="position:relative;display: block;width: 100%;height:40vh;"></div>
+
+  <div style="display: block;width: 100%;height:30vh;"></div>
+
+  <div class="hideme" id="statistics-container" style="position: relative;display: inline-block;text-align: center;">
+    <div style="text-align: center;">
+      <div class="green-boarder">
+        <span id="stat-header">
+          In 2019, you...
+        </span>
+      </div>
+    </div>
+    <div id="statistics" class="hideme">
+      </br>
+      </br>
+      </br>
+      <div id="stat-row1" class="row" style="width: 100%;">
+
+        <div id="image-left" class="col-lg-4 col-md-6 mb-4" style="">
+
+          <img src="../assets/tongue_out.png" id="img1" class="rounded img-fluid mb-4" alt="" data-wow-delay="0.5s">
+
+        </div>
+        <div id="stat1-text" class="stat-text">
+          <p>
+            found a home for 100 of our pets
+          </p>
+        </div>
+
+        <div id="stat-row2" class="col-lg-4 col-md-6 mb-4" style="width: 100%;">
+
+          <img id="img2" src="../assets/Newfoundland-1.jpg" class="rounded img-fluid mb-4" alt="" data-wow-delay="0.2s">
+
+          <img id="img3" src="../assets/reilly23.jpg" class="rounded img-fluid mb-4" alt="" data-wow-delay="0.1s">
+
+        </div>
+
+        <div id="stat2-text" class="stat-text">
+          <p>
+            reduced the number of stray animals in medford by half
+          </p>
+        </div>
+        <div id="stat3-text" class="stat-text">
+          <p>
+            helped us feed hundreds of forgotten animals with your donations
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hideme" id="need-family-wrapper">
+    <div id="need-family">
+      <span class="hideme">
+        But we still have countless pets in need of a family.
+      </span>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <div class="hideme green-boarder" id="help-today">
+      <span>
+        Help Today
+      </span>
+    </div>
+  </div>
+
+  <div id="help-now-container" class="row" style="font-size: 10px; width: 100%;">
+    <div class="column hideme" id="help-row1"><a href="adoptableAnimals.html">
+        <div>
+          <p>
+            Adopt
+          </p>
+        </div>
+      </a></div>
+    <div class="column hideme" id="help-row2"><a href="donate.html">
+        <div>
+          <p>
+            Donate
+          </p>
+        </div>
+      </a></div>
+    <div class="column hideme" id="help-row3"><a href="volunteer.html">
+        <div>
+          <p>
+            Volunteer
+          </p>
+        </div>
+      </a></div>
+    </div>
+
+  <footer>
+    <p class="copy"> Copyright © 2020 Peters Pets. All rights reserved.</p>
+  </footer>
+
+
+
+  <!-- <p>this is out website</p> -->
+  <!-- AOS -->
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+  <!-- Bootstrap: goes at bottom of body -->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script>
+
+    function hideIfBelow() {
+      $('.hideme').each(function (i) {
+
+        var top_of_elem = $(this).position().top;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        /* If the object is completely visible in the window, fade it it */
+        if (bottom_of_window > top_of_elem + 40) {
+          $(this).animate({ 'opacity': '1' }, 750);
+        }
+      });
+    }
+
+
+    $(document).ready(function () {
+      hideIfBelow();
+      /* Every time the window is scrolled ... */
+      $(window).scroll(function () {
+        hideIfBelow();
+      });
+
+    });
+  </script>
+
+  <script src="pawprints.js"></script>
+  <script src="youhelped.js"></script>
+
+
+  <script>
+
+    function place_statistics() {
+      $("#stat1-text").css({ "left": "" + left_amount + "px", "width": $("#img1").outerWidth() + "px" });
+      $("#stat2-text").css({ "left": "" + left_amount + "px", "width": $("#img2").outerWidth() + "px" });
+      $("#stat3-text").css({ "left": "" + left_amount + "px", "width": $("#img3").outerWidth() + "px" });
+
+      $("#stat-row1").css({ "transform": 'translateX("0%")' });
+      $("#stat-row2").css({ "transform": 'translateX("50%")' });
+
+      var left_amount = $('#img1').offset().left + $('#img1').outerWidth() / 2 - $("#stat1-text").outerWidth() / 2;
+      console.log(left_amount);
+      $("#stat1-text").css({ "left": "" + left_amount + "px", "width": $("#img1").outerWidth() + "px" });
+
+      var left_amount = $('#img2').offset().left + $('#img2').outerWidth() / 2 - $("#stat2-text").outerWidth() / 2;
+      console.log(left_amount);
+      $("#stat2-text").css({ "left": "" + left_amount + "px", "width": $("#img2").outerWidth() + "px" });
+
+      var left_amount = $('#img3').offset().left + $('#img3').outerWidth() / 2 - $("#stat3-text").outerWidth() / 2;
+      var top_amount = $('#img3').position().top;
+      console.log(left_amount);
+      $("#stat3-text").css({ "left": "" + left_amount + "px", "width": $("#img3").outerWidth() + "px" });
+      $("#stat3-text").css({ "top": "" + top_amount + "px" });
+
+    }
+
+    place_statistics();
+
+    window.addEventListener('resize', place_statistics);
+
+  </script>
+
+</body>
+
 </html>
